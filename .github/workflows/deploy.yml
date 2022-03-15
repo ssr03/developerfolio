@@ -22,6 +22,7 @@ jobs:
           persist-credentials: false
 
       - name: Install and Build 🔧 # Build the Project
+        working-directory: node_modules
         run: |
           npm install
           npm run build
@@ -29,5 +30,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
+          BRANCH: master # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
