@@ -56,7 +56,7 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Develop highly interactive Back end / Front end for your web applications"
-    ),
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -196,8 +196,7 @@ const bigProjects = {
       image: "",
       projectName: "포스코 인터네셔녈 미얀마 RPA프로젝트",
       projectDesc: "5개의 자동화 추진 과제중 '출장신청서 내 Per Diem 자동계산 및 검증' 과제 수행",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       image: "",
@@ -258,7 +257,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
