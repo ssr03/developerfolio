@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ssr03.github.io/",
-  "name": "ssr03.github.io",
+  "homepage": "https://ssr03.github.io/developerfolio",
+  "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
