@@ -7,10 +7,11 @@ env:
   MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
 on:
   push:
+  pull_request:
     branches:
       - master
-  schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+#  schedule:
+#    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
