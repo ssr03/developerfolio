@@ -106,7 +106,6 @@ const educationInfo = {
       subHeader: "수학(전공) / 컴퓨터 과학(부전공)",
       duration: "March 2012 - February 2019",
       desc: "",
-      descBullets: []
     },
     {
       schoolName: "금천고등학교",
@@ -114,7 +113,6 @@ const educationInfo = {
       subHeader: "인문계",
       duration: "March 2009 - February 2012",
       desc: "",
-      descBullets: []
     }
   ]
 };
