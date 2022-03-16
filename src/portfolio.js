@@ -117,6 +117,20 @@ const educationInfo = {
   ]
 };
 
+// Training Section
+
+const trainingInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  trainings: [
+    {
+      courseName: "빅데이터 및 딥러닝 기술융합 전문가 양성과정",
+      instituteName: "플레이데이터",
+      duration: "June 2018 - January 2019",
+      desc: "",
+    }
+  ]
+};
+
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
@@ -131,7 +145,7 @@ const techStack = {
       progressPercentage: "60%"
     },
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Frontend", //Insert stack or technology you have experience in
       progressPercentage: "40%" //Insert relative proficiency in percentage
     },
   ],
@@ -195,7 +209,7 @@ const bigProjects = {
     {
       image: "",
       projectName: "포스코 인터네셔녈 미얀마 RPA프로젝트",
-      projectDesc: "5개의 자동화 추진 과제중 '출장신청서 내 Per Diem 자동계산 및 검증' 과제 수행",
+      projectDesc: "5개의 자동화 추진 과제 중 '출장신청서 내 Per Diem 자동계산 및 검증' 과제 수행",
       footerLink: []
     },
     {
@@ -217,7 +231,7 @@ const bigProjects = {
     {
       image: "",
       projectName: "일진 머티리얼즈 RPA 프로젝트",
-      projectDesc: "7개의 자동화 추진 과제중 '일일 출하 마감자료 작성 자동화' 과제 수행",
+      projectDesc: "7개의 자동화 추진 과제 중 '일일 출하 마감자료 작성 자동화' 과제 수행",
       footerLink: [
           //  you can add extra buttons here.
       ]
@@ -249,7 +263,7 @@ const bigProjects = {
     {
       image: "",
       projectName: "미니요기요",
-      projectDesc: "기존 요기요 시스템의 기본 기능 및 추가로 기획한 기능을 포함한 웹사이트(루키 히어로 테크 인턴쉽 프로젝트)",
+      projectDesc: "기존 요기요 시스템의 기본 기능 + 추가 기능을 포함한 웹사이트(인턴 프로젝트)",
       footerLink: [
         {
           name: "Source",
@@ -274,14 +288,16 @@ const achievementSection = {
     {
       title: "정보처리기사",
       subtitle: "",
+      date: "November 2021",
       image: "",
       footerLink: [
         {name: "Certification", url: ""},
       ]
     },
     {
-      title: "SQLD",
+      title: "SQLD(SQL 개발자)",
       subtitle: "",
+      date: "June 2020",
       image: "",
       footerLink: [
         {name: "Certification", url: ""},
@@ -290,6 +306,7 @@ const achievementSection = {
     {
       title: "컴퓨터활용능력 1급",
       subtitle: "",
+      date: "September 2019",
       image: "",
       footerLink: [
         {name: "Certification", url: ""},
@@ -377,6 +394,7 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
+  trainingInfo,
   techStack,
   workExperiences,
   openSource,
