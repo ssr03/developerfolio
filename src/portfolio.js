@@ -171,7 +171,7 @@ const workExperiences = {
       companylogo: require("./assets/images/deliveryHero.png"),
       date: "March 2019 – July 2019",
       desc: "기술연구소 백엔드 팀",
-      descBullets: ["Django 기반으로 '미니요기요' 웹 애플리케이션 개발(인턴 프로젝트)진행"]
+      descBullets: ["Django 기반 '미니요기요' 웹 애플리케이션 개발(인턴 프로젝트)진행"]
     }
   ]
 };
