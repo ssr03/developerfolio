@@ -8,9 +8,9 @@ const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
+  const [prof, setProf] = useState([]);
   function setProfileFunction(array) {
-    setrepo(array);
+    setProf(array);
   }
 
   useEffect(() => {
