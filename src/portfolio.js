@@ -194,6 +194,7 @@ const bigProjects = {
       image: "",
       projectName: "알피니언 전자전표 프로젝트",
       projectDesc: "증빙관리, 전표처리 등 경비처리와 관련된 토탈 서비스를 제공하는 '기업형 경비관리' 솔루션",
+      detail: "알피니언_전자전표_프로젝트.md",
       footerLink: [
         {
           name: "Front-end Source",
@@ -203,19 +204,20 @@ const bigProjects = {
           name: "Back-end Source",
           url: "https://github.com/ssr03/ijap-eacct-back/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: "",
-      projectName: "포스코 인터네셔녈 미얀마 RPA프로젝트",
+      projectName: "포스코 인터네셔녈 미얀마 RPA 프로젝트",
       projectDesc: "5개의 자동화 추진 과제 중 '출장신청서 내 Per Diem 자동계산 및 검증' 과제 수행",
+      detail: "미얀마_PRA_프로젝트.md",
       footerLink: []
     },
     {
       image: "",
       projectName: "유니스코/건설 전자전표 프로젝트",
       projectDesc: "증빙관리, 전표처리 등 경비처리와 관련된 토탈 서비스를 제공하는 '기업형 경비관리' 솔루션",
+      detail: "유니스코_전자전표_프로젝트.md",
       footerLink: [
         {
           name: "Front-end Source",
@@ -232,6 +234,7 @@ const bigProjects = {
       image: "",
       projectName: "일진 머티리얼즈 RPA 프로젝트",
       projectDesc: "7개의 자동화 추진 과제 중 '일일 출하 마감자료 작성 자동화' 과제 수행",
+      detail: "머티리얼즈_PRA_프로젝트.md",
       footerLink: [
           //  you can add extra buttons here.
       ]
@@ -240,6 +243,7 @@ const bigProjects = {
       image: "",
       projectName: "일진 다이아몬드 MES 구축 프로젝트",
       projectDesc: "MES 구축 프로젝트",
+      detail: "다이아몬드_MES_프로젝트.md",
       footerLink: [
         //  you can add extra buttons here.
       ]
@@ -248,6 +252,7 @@ const bigProjects = {
       image: "",
       projectName: "스터디 모집 사이트",
       projectDesc: "스터디 모집 웹사이트(신입 과제 프로젝트)",
+      detail: "신입과제_프로젝트.md",
       footerLink: [
         {
           name: "Front-end Source",
@@ -264,6 +269,7 @@ const bigProjects = {
       image: "",
       projectName: "미니요기요",
       projectDesc: "기존 요기요 시스템의 기본 기능 + 추가 기능을 포함한 웹사이트(인턴 프로젝트)",
+      detail: "project-1",
       footerLink: [
         {
           name: "Source",

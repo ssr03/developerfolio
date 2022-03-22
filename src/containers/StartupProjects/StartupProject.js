@@ -3,14 +3,21 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {useNavigate} from "react-router";
 
 export default function StartupProject() {
+  let navigate = useNavigate();
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    let win = window.open(url, "_blank");
     win.focus();
+  }
+
+  function openDetailPage(url){
+    navigate(url);
   }
 
   const {isDark} = useContext(StyleContext);
@@ -65,6 +72,14 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    <div
+                        className={
+                          isDark ? "dark-mode card-detail" : "card-detail"
+                        }
+                        onClick={() => openDetailPage(`/project/${project.detail}`)}
+                    >
+                      👉내용보기
+                    </div>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
