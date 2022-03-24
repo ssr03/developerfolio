@@ -204,14 +204,16 @@ const bigProjects = {
           name: "Back-end Source",
           url: "https://github.com/ssr03/ijap-eacct-back/"
         }
-      ]
+      ],
+      tags:["java", "spring-boot", "spring-data-jpa", "mariadb", "vue"]
     },
     {
       image: "",
       projectName: "포스코 인터네셔녈 미얀마 RPA 프로젝트",
       projectDesc: "5개의 자동화 추진 과제 중 '출장신청서 내 Per Diem 자동계산 및 검증' 과제 수행",
       detail: "미얀마_PRA_프로젝트.md",
-      footerLink: []
+      footerLink: [],
+      tags:["C#"]
     },
     {
       image: "",
@@ -228,7 +230,8 @@ const bigProjects = {
           url: "https://github.com/ssr03/ijun-eacct-back/"
         }
         //  you can add extra buttons here.
-      ]
+      ],
+      tags:["java", "spring-boot", "spring-data-jpa", "mariadb"]
     },
     {
       image: "",
@@ -237,7 +240,8 @@ const bigProjects = {
       detail: "머티리얼즈_PRA_프로젝트.md",
       footerLink: [
           //  you can add extra buttons here.
-      ]
+      ],
+      tags:["C#","oracle"]
     },
     {
       image: "",
@@ -246,7 +250,8 @@ const bigProjects = {
       detail: "다이아몬드_MES_프로젝트.md",
       footerLink: [
         //  you can add extra buttons here.
-      ]
+      ],
+      tags:["C++", "oracle", "C#"]
     },
     {
       image: "",
@@ -263,21 +268,22 @@ const bigProjects = {
           url: "https://github.com/ssr03/get-together-back"
         }
         //  you can add extra buttons here.
-      ]
+      ],
+      tags:["java", "spring-boot", "mybatis", "mariadb", "react"]
     },
     {
       image: "",
       projectName: "미니요기요",
       projectDesc: "기존 요기요 시스템의 기본 기능 + 추가 기능을 포함한 웹사이트(인턴 프로젝트)",
-      detail: "project-1",
       footerLink: [
         {
           name: "Source",
           url: "https://github.com/ssr03/MiniDelivery"
         }
         //  you can add extra buttons here.
-      ]
-    }
+      ],
+      tags:["python", "django", "postgresql", "jquery"]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };

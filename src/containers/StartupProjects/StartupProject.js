@@ -72,14 +72,32 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.tags?(
+                        <div className="project-card-tag">
+                          {project.tags.map((item, i) => {
+                            return (
+                                <span
+                                    key={i}
+                                    className={
+                                      isDark ? "dark-mode project-tech-tag" : "project-tech-tag"
+                                    }
+                                >
+                              {item}
+                            </span>
+                            );
+                          })}
+                        </div>
+                    ):null}
+                    {project.detail?(
                     <div
                         className={
                           isDark ? "dark-mode card-detail" : "card-detail"
                         }
                         onClick={() => openDetailPage(`/project/${project.detail}`)}
                     >
-                      👉내용보기
+                      👉 read more
                     </div>
+                    ):null}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
