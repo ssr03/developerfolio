@@ -1,12 +1,13 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import {useNavigate} from "react-router";
+import Modal from "../../components/modal/Modal";
 
 export default function StartupProject() {
-  let navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+  const [projectInfo, setProjectInfo] = useState({});
 
   function openUrlInNewTab(url) {
     if (!url) {
@@ -16,8 +17,14 @@ export default function StartupProject() {
     win.focus();
   }
 
-  function openDetailPage(url){
-    navigate(url);
+  function openModal(project){
+    setShowModal(true);
+    setProjectInfo(project);
+  }
+
+  function closeModal(){
+    setShowModal(false);
+    setProjectInfo({});
   }
 
   const {isDark} = useContext(StyleContext);
@@ -93,7 +100,7 @@ export default function StartupProject() {
                         className={
                           isDark ? "dark-mode card-detail" : "card-detail"
                         }
-                        onClick={() => openDetailPage(`/project/${project.detail}`)}
+                        onClick={()=>openModal(project)}
                     >
                       👉 read more
                     </div>
@@ -122,6 +129,9 @@ export default function StartupProject() {
           </div>
         </div>
       </div>
+      <transition name="modal">
+        {showModal&&<Modal project={projectInfo} closeModal={closeModal}/> }
+      </transition>
     </Fade>
   );
 }
