@@ -216,6 +216,44 @@ const bigProjects = {
         }
       ],
       tags:["java", "spring-boot", "spring-data-jpa", "mariadb", "vue"],
+      pictures: [
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img.png"),
+          title: "메인화면"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_1.png"),
+          title: "개인비용 신청서 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_2.png"),
+          title: "전자세금계산서 - 전자세금계산서 확인"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_3.png"),
+          title: "전자세금계산서 - 전자세금계산서 전표 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_6.png"),
+          title: "기초예산 등록"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_4.png"),
+          title: "예산신청서"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_7.png"),
+          title: "부서별 예산/실적내역"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_8.png"),
+          title: "전표관리 - 전표내역조회(회계팀용)"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_8.png"),
+          title: "전표관리 - 전표반려/검인/확정(회계팀용)"
+        },
+      ]
     },
     {
       image: "",
@@ -248,24 +286,40 @@ const bigProjects = {
       tags:["java", "spring-boot", "spring-data-jpa", "mariadb"],
       pictures: [
         {
-          img: require("./assets/images/portfolio/ijap-eacct/img.png"),
+          img: require("./assets/images/portfolio/ijun-eacct/img.png"),
           title: "메인화면"
         },
         {
-          img: require("./assets/images/portfolio/ijap-eacct/img_1.png"),
+          img: require("./assets/images/portfolio/ijun-eacct/img_1.png"),
           title: "개인비용 신청서 작성"
         },
         {
-          img: require("./assets/images/portfolio/ijap-eacct/img_2.png"),
-          title: "전자세금계산서 조회"
+          img: require("./assets/images/portfolio/ijun-eacct/img_2.png"),
+          title: "전자세금계산서 - 전자세금계산서 확인"
         },
         {
-          img: require("./assets/images/portfolio/ijap-eacct/img_3.png"),
+          img: require("./assets/images/portfolio/ijun-eacct/img_5.png"),
+          title: "전자세금계산서 - 전자세금계산서 전표 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/ijun-eacct/img_6.png"),
+          title: "수기세금계산서 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/ijun-eacct/img_7.png"),
+          title: "법인카드 분할전표 - 법인카드 내역"
+        },
+        {
+          img: require("./assets/images/portfolio/ijun-eacct/img_8.png"),
+          title: "법인카드 분할전표 - 작성(법인카드 비용을 다수 부서에서 비용 분할하는 화면)"
+        },
+        {
+          img: require("./assets/images/portfolio/ijun-eacct/img_3.png"),
           title: "결재 상신"
         },
         {
-          img: require("./assets/images/portfolio/ijap-eacct/img_4.png"),
-          title: "전자결재-결재할 문서"
+          img: require("./assets/images/portfolio/ijun-eacct/img_4.png"),
+          title: "결재 상세"
         },
       ]
     },
@@ -279,7 +333,36 @@ const bigProjects = {
         //  you can add extra buttons here.
       ],
       tags:["C++", "oracle", "C#"],
-      pictures:[]
+      pictures:[
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img.png"),
+          title: "설비 수리 정보 등록"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_1.png"),
+          title: "금형 입고 등록"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_2.png"),
+          title: "금형 툴 이벤트"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_3.png"),
+          title: "금형 폐기 요청/확정"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_4.png"),
+          title: "작업자 관리"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_5.png"),
+          title: "작업자 등록"
+        },
+        {
+          img: require("./assets/images/portfolio/ijda-mes/img_pda.png"),
+          title: "이동 지시 확정(PDA화면)"
+        },
+      ]
     },
     {
       image: "",
@@ -299,8 +382,8 @@ const bigProjects = {
         //  you can add extra buttons here.
       ],
       tags:["java", "spring-boot", "mybatis", "mariadb", "react"],
-      pictures: [
-        // {
+      // pictures: [
+      //   // {
         //   img: require("./assets/images/portfolio/img_1.png"),
         //   title: "로그인 화면"
         // },
@@ -316,7 +399,7 @@ const bigProjects = {
         //   img: require("./assets/images/portfolio/img_4.png"),
         //   title: "스터디 모집글 상세보기"
         // },
-      ]
+      // ]
     },
     {
       image: "",
