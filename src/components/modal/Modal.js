@@ -21,60 +21,63 @@ export default function Modal(props){
             .catch(err => console.log(err));
     },[]);
 
-    return(
-        <div>
-           <div className="modal-mask">
-               <div className="modal-wrapper">
-                   <div className={isDark?"dark-mode modal-container": "modal-container"}>
-                       <div className="title">
+    if (markdown) {
+        return (
+            <div>
+                <div className="modal-mask">
+                    <div className="modal-wrapper">
+                        <div className={isDark ? "dark-mode modal-container" : "modal-container"}>
+                            <div className="title">
                            <span>
                                <a>{project.projectName}</a>
                            </span>
-                           <a className="pull-right"
-                              style={{fontSize: "18px"}}
-                              onClick={closeModal}
-                           >
-                               <i className="fas fa-times"/>
-                           </a>
-                           <hr className="grey-line"/>
-                       </div>
-                       <div className="modal-body">
-                           <div className= "date">
-                               <span>{project.duration}</span>
-                           </div>
-                           <div className="bheight">
-                               {project.tags.map((item, i) => {
-                                   return (
-                                           <span
-                                               key={i}
-                                               className={
-                                                   isDark ? "dark-mode badge" : "badge"
-                                               }>
+                                <a className="pull-right"
+                                   style={{fontSize: "18px"}}
+                                   onClick={closeModal}
+                                >
+                                    <i className="fas fa-times"/>
+                                </a>
+                                <hr className="grey-line"/>
+                            </div>
+                            <div className="modal-body">
+                                <div className="date">
+                                    <span>{project.duration}</span>
+                                </div>
+                                <div className="bheight">
+                                    {project.tags.map((item, i) => {
+                                        return (
+                                            <span
+                                                key={i}
+                                                className={
+                                                    isDark ? "dark-mode badge" : "badge"
+                                                }>
                                                {item}
                                            </span>
-                                       );
-                               })}
-                               <div style={{textAlign:"justify"}}>
-                                   <span>{project.projectDesc}</span>
-                               </div>
+                                        );
+                                    })}
+                                    <div style={{textAlign: "justify"}}>
+                                        <span>{project.projectDesc}</span>
+                                    </div>
 
-                               <div className="detail-main" id="detail">
-                                   <div className="container">
-                                   <ReactMarkdown>
-                                       {markdown}
-                                   </ReactMarkdown>
-                                   </div>
-                               </div>
-                               {project.pictures&&<Images images={project.pictures}/> }
-                           </div>
-                       </div>
-                       <div className="text-center">
-                           <hr className="grey-line"/>
-                           <button className="main-button btn-close" onClick={closeModal}>close</button>
-                       </div>
-                   </div>
-               </div>
-           </div>
-        </div>
-    )
+                                    <div className="detail-main" id="detail">
+                                        <div className="container">
+                                            <ReactMarkdown>
+                                                {markdown}
+                                            </ReactMarkdown>
+                                        </div>
+                                    </div>
+                                    {project.pictures && <Images images={project.pictures}/>}
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <hr className="grey-line"/>
+                                <button className="main-button btn-close" onClick={closeModal}>close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+    return null;
 }
