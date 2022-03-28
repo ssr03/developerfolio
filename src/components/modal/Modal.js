@@ -25,7 +25,7 @@ export default function Modal(props){
         <div>
            <div className="modal-mask">
                <div className="modal-wrapper">
-                   <div className="modal-container">
+                   <div className={isDark?"dark-mode modal-container": "modal-container"}>
                        <div className="title">
                            <span>
                                <a>{project.projectName}</a>
@@ -39,7 +39,7 @@ export default function Modal(props){
                            <hr className="grey-line"/>
                        </div>
                        <div className="modal-body">
-                           <div className="date">
+                           <div className= "date">
                                <span>{project.duration}</span>
                            </div>
                            <div className="bheight">

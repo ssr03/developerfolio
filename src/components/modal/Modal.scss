@@ -47,6 +47,11 @@ a:hover {
   flex-direction: column;
   display: flex; /*added*/
 }
+
+.dark-mode .modal-container{
+  background-color: #343a40!important;
+  color: #d3d2d2!important;
+}
 @media screen and (max-width: 1600px) {
   .modal-container {
     width: 60%;
