@@ -3,30 +3,35 @@ import "./Images.scss";
 
 export default function Images({images}){
     return(
-        <div style={{overflow:"auto"}}>
-            <div className="prow">
-                {/*{*/}
-                {/*    images.map((item,i)=>{*/}
-                {/*       return(*/}
-                {/*           <div className="pcloumn"*/}
-                {/*                key={i}>*/}
-                {/*               <img*/}
-                {/*                   src={item.image}*/}
-                {/*                   className="g-img"*/}
-                {/*               />*/}
-                {/*               <div className="mt-1">*/}
-                {/*                   <p style="font-weight: 500">{item.title}</p>*/}
-                {/*               </div>*/}
-                {/*           </div>*/}
-                {/*       );*/}
-                {/*    })*/}
-                {/*}*/}
-            </div>
-            <div id="myModal" className="modal">
-                <span className="close">&times;</span>
-                <img className="modal-content" id="modalImg"/>
-                <div id="caption"></div>
-            </div>
+        <>
+        <hr/>
+        <div>
+            {
+                images.map((item,i)=>{
+                   return(
+                       <div key={i} style={{overflow:"auto"}}>
+                           <div className="prow">
+                               <div className="pcolumn"
+                                    key={i}>
+                                   <div className="img-title">
+                                       <span style={{fontWeight: 500}}>{item.title}</span>
+                                   </div>
+                                   <img
+                                       src={item.img}
+                                       className="g-img"
+                                   />
+                               </div>
+                           </div>
+                           <div id="myModal" className="modal">
+                               <span className="close">&times;</span>
+                               <img className="modal-content" id="modalImg"/>
+                               <div id="caption"></div>
+                           </div>
+                       </div>
+                   );
+                })
+            }
         </div>
+        </>
     )
 }

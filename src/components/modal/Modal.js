@@ -65,11 +65,7 @@ export default function Modal(props){
                                    </ReactMarkdown>
                                    </div>
                                </div>
-                               {/*<hr/>*/}
-                               <div>
                                {project.pictures&&<Images images={project.pictures}/> }
-                               </div>
-
                            </div>
                        </div>
                        <div className="text-center">

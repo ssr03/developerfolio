@@ -215,7 +215,7 @@ const bigProjects = {
           url: "https://github.com/ssr03/ijap-eacct-back/"
         }
       ],
-      tags:["java", "spring-boot", "spring-data-jpa", "mariadb", "vue"]
+      tags:["java", "spring-boot", "spring-data-jpa", "mariadb", "vue"],
     },
     {
       image: "",
@@ -245,7 +245,29 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ],
-      tags:["java", "spring-boot", "spring-data-jpa", "mariadb"]
+      tags:["java", "spring-boot", "spring-data-jpa", "mariadb"],
+      pictures: [
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img.png"),
+          title: "메인화면"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_1.png"),
+          title: "개인비용 신청서 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_2.png"),
+          title: "전자세금계산서 조회"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_3.png"),
+          title: "결재 상신"
+        },
+        {
+          img: require("./assets/images/portfolio/ijap-eacct/img_4.png"),
+          title: "전자결재-결재할 문서"
+        },
+      ]
     },
     {
       image: "",
@@ -278,15 +300,22 @@ const bigProjects = {
       ],
       tags:["java", "spring-boot", "mybatis", "mariadb", "react"],
       pictures: [
-        {
-          img: require("./assets/images/portfolio/img_1.png")
-        },
-        {
-          img: require("./assets/images/portfolio/img_2.png")
-        },
-        {
-          img: require("./assets/images/portfolio/img_3.png")
-        },
+        // {
+        //   img: require("./assets/images/portfolio/img_1.png"),
+        //   title: "로그인 화면"
+        // },
+        // {
+        //   img: require("./assets/images/portfolio/img_2.png"),
+        //   title: "스터디 모집 리스트"
+        // },
+        // {
+        //   img: require("./assets/images/portfolio/img_3.png"),
+        //   title: "스터디 모집글 작성"
+        // },
+        // {
+        //   img: require("./assets/images/portfolio/img_4.png"),
+        //   title: "스터디 모집글 상세보기"
+        // },
       ]
     },
     {
