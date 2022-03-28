@@ -382,24 +382,28 @@ const bigProjects = {
         //  you can add extra buttons here.
       ],
       tags:["java", "spring-boot", "mybatis", "mariadb", "react"],
-      // pictures: [
-      //   // {
-        //   img: require("./assets/images/portfolio/img_1.png"),
-        //   title: "로그인 화면"
-        // },
-        // {
-        //   img: require("./assets/images/portfolio/img_2.png"),
-        //   title: "스터디 모집 리스트"
-        // },
-        // {
-        //   img: require("./assets/images/portfolio/img_3.png"),
-        //   title: "스터디 모집글 작성"
-        // },
-        // {
-        //   img: require("./assets/images/portfolio/img_4.png"),
-        //   title: "스터디 모집글 상세보기"
-        // },
-      // ]
+      pictures: [
+        {
+          img: require("./assets/images/portfolio/get-together/img.png"),
+          title: "로그인 화면"
+        },
+        {
+          img: require("./assets/images/portfolio/get-together/img_1.png"),
+          title: "스터디 모집 리스트"
+        },
+        {
+          img: require("./assets/images/portfolio/get-together/img_2.png"),
+          title: "스터디 모집글 작성"
+        },
+        {
+          img: require("./assets/images/portfolio/get-together/img_3.png"),
+          title: "스터디 모집글 상세보기"
+        },
+        {
+          img: require("./assets/images/portfolio/get-together/img_4.png"),
+          title: "My Page"
+        },
+      ]
     },
     {
       image: "",
