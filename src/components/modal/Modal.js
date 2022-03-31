@@ -28,9 +28,9 @@ export default function Modal(props){
                     <div className="modal-wrapper">
                         <div className={isDark ? "dark-mode modal-container" : "modal-container"}>
                             <div className="title">
-                           <span>
-                               <a>{project.projectName}</a>
-                           </span>
+                                <span>
+                                   <a>{project.projectName}</a>
+                                </span>
                                 <a className="pull-right"
                                    style={{fontSize: "18px"}}
                                    onClick={closeModal}
