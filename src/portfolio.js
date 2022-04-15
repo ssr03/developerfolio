@@ -206,14 +206,6 @@ const bigProjects = {
       duration: "August 2021 - December 2021",
       detail: "알피니언_전자전표_프로젝트.md",
       footerLink: [
-        {
-          name: "Front-end Source",
-          url: "https://github.com/ssr03/ijap-eacct-front/"
-        },
-        {
-          name: "Back-end Source",
-          url: "https://github.com/ssr03/ijap-eacct-back/"
-        }
       ],
       tags:["java", "spring-boot", "spring-data-jpa", "mariadb", "vue"],
       pictures: [
@@ -273,14 +265,6 @@ const bigProjects = {
       duration:"December 2020 - April 2021",
       detail: "유니스코_전자전표_프로젝트.md",
       footerLink: [
-        {
-          name: "Front-end Source",
-          url: "https://github.com/ssr03/ijun-eacct-front/"
-        },
-        {
-          name: "Back-end Source",
-          url: "https://github.com/ssr03/ijun-eacct-back/"
-        }
         //  you can add extra buttons here.
       ],
       tags:["java", "spring-boot", "spring-data-jpa", "mariadb"],
