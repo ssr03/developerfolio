@@ -161,7 +161,7 @@ const workExperiences = {
       role: "Software Engineer",
       company: "일진 씨앤에스",
       companylogo: require("./assets/images/ijinc&s.png"),
-      date: "December 2019 – Present",
+      date: "December 2019 – May 2022",
       desc: "DT사업파트",
       descBullets: ["SI프로젝트 개발"]
     },
