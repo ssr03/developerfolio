@@ -158,6 +158,14 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Back-End Developer",
+      company: "키다리스튜디오",
+      companylogo: require("./assets/images/KidariStudio.png"),
+      date: "May 2022 – Present",
+      desc: "글로벌개발부 BE 개발팀",
+      descBullets: ["글로벌 웹툰 플랫폼 백엔드 개발"]
+    },
+    {
       role: "Software Engineer",
       company: "일진 씨앤에스",
       companylogo: require("./assets/images/ijinc&s.png"),
