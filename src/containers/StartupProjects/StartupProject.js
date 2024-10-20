@@ -1,16 +1,30 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import Modal from "../../components/modal/Modal";
 
 export default function StartupProject() {
+  const [showModal, setShowModal] = useState(false);
+  const [projectInfo, setProjectInfo] = useState({});
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    let win = window.open(url, "_blank");
     win.focus();
+  }
+
+  function openModal(project){
+    setShowModal(true);
+    setProjectInfo(project);
+  }
+
+  function closeModal(){
+    setShowModal(false);
+    setProjectInfo({});
   }
 
   const {isDark} = useContext(StyleContext);
@@ -65,6 +79,32 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.tags?(
+                        <div className="project-card-tag">
+                          {project.tags.map((item, i) => {
+                            return (
+                                <span
+                                    key={i}
+                                    className={
+                                      isDark ? "dark-mode project-tech-tag" : "project-tech-tag"
+                                    }
+                                >
+                              {item}
+                            </span>
+                            );
+                          })}
+                        </div>
+                    ):null}
+                    {project.detail?(
+                    <div
+                        className={
+                          isDark ? "dark-mode card-detail" : "card-detail"
+                        }
+                        onClick={()=>openModal(project)}
+                    >
+                      👉 read more
+                    </div>
+                    ):null}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -89,6 +129,9 @@ export default function StartupProject() {
           </div>
         </div>
       </div>
+      <transition name="modal">
+        {showModal&&<Modal project={projectInfo} closeModal={closeModal}/> }
+      </transition>
     </Fade>
   );
 }

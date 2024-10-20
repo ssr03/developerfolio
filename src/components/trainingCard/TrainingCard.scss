@@ -1,11 +1,11 @@
 @import "../../_globalColor";
 
-.education-card {
+.training-card {
   display: flex;
   flex-direction: row;
 }
 
-.education-card:hover + .education-card-border {
+.training-card:hover + .training-card-border {
   border-color: $educationCardBorder;
   width: 100%;
   -webkit-transition: width 0.6s ease-in-out;
@@ -14,7 +14,7 @@
   transition: width 0.6s ease-in-out;
 }
 
-.education-card-border {
+.training-card-border {
   height: 30px;
   width: 80%;
   border-top: 2px solid $lightBorder1;
@@ -25,21 +25,22 @@
   transition: width 0.6s ease-in-out;
 }
 
-.education-head {
+.training-head {
   display: flex;
   flex-direction: row;
 }
 
-.education-text-school {
+.training-text-school {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
   text-overflow: ellipsis;
+  overflow: inherit;
   white-space: nowrap;
   height: 27px;
 }
 
-.education-roundedimg {
+.training-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
   width: 6rem;
@@ -48,11 +49,11 @@
   border-radius: 50%;
 }
 
-.education-card-right {
+.training-card-right {
   max-width: 70%;
 }
 
-.education-text-subHeader {
+.training-text-subHeader {
   color: $textColor;
   font-weight: 700;
   font-size: 19px;
@@ -61,47 +62,47 @@
   line-height: normal;
 }
 
-.education-text-duration {
+.training-text-duration {
   color: $titleColor;
   font-size: 19px;
   margin: 0px;
   padding-top: 0.5rem;
 }
 
-.education-text-desc {
+.training-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.education-text-bullets > ul {
+.training-text-bullets > ul {
   margin-top: 0.5rem;
 }
 
 /* Media Query */
 
 @media (max-width: 1380px) {
-  .education-card {
+  .training-card {
     flex-direction: column;
     padding-bottom: 10px;
   }
-  .education-card-right {
+  .training-card-right {
     max-width: 90%;
   }
-  .education-card-border {
+  .training-card-border {
     width: 90%;
   }
-  .education-text-subHeader {
+  .training-text-subHeader {
     padding-top: 0.5rem;
     font-size: 16px;
   }
-  .education-text-school {
+  .training-text-school {
     font-size: 20px;
     height: 23px;
   }
-  .education-text-duration {
+  .training-text-duration {
     font-size: 16px;
   }
-  .education-roundedimg {
+  .training-roundedimg {
     width: 4rem;
     height: 4rem;
     margin-bottom: 0.5rem;
@@ -110,23 +111,23 @@
 }
 
 @media (max-width: 768px) {
-  .education-card {
+  .training-card {
     text-align: center;
   }
-  .education-card-right {
+  .training-card-right {
     max-width: 100%;
   }
-  .education-card-border {
+  .training-card-border {
     width: 100%;
   }
-  .education-roundedimg {
+  .training-roundedimg {
     margin-top: 10px;
     width: 4rem;
     height: 4rem;
     margin-bottom: 1rem;
     margin-right: 0;
   }
-  .education-text-bullets > ul {
+  .training-text-bullets > ul {
     max-width: 80%;
     margin: auto;
   }

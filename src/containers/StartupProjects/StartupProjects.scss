@@ -16,7 +16,27 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+  margin-bottom: 0.25em;
 }
+
+.card-detail {
+  color: $cardDetail;
+  font-size: 17px;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.card-detail:hover {
+  color: $buttonHover;
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+  cursor:pointer;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -77,6 +97,28 @@
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.project-card-tag{
+  margin-bottom:0.25em;
+}
+
+.project-card-tag span.project-tech-tag {
+  background: $tagButtonColor;
+  color: $textColor!important;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.5rem;
+  height: 1.75em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.25rem 0.25rem 0;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
