@@ -1,2 +1,0 @@
-(this.webpackJsonpdeveloperfolio=this.webpackJsonpdeveloperfolio||[]).push([[8],{222:function(e,o,p){e.exports=p.p+"static/media/\uc2e0\uc785\uacfc\uc81c_\ud504\ub85c\uc81d\ud2b8.53a91d97.md"}}]);
-//# sourceMappingURL=8.67a4ace4.chunk.js.map
