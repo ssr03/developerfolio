@@ -23,7 +23,7 @@ const greeting = {
   username: "Sora Son",
   title: "Hi all, I'm Sora",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web with JavaScript / Reactjs / Vuejs / Spring Boot and some other cool libraries and frameworks."
+    "A passionate Back end Software Developer 🚀 having an experience of building Web with Java / Kotlin / Spring Boot and some other cool libraries and frameworks."
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY Back end DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
         "⚡ Develop Back end REST API with Spring"
@@ -64,7 +64,7 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "java",
+      skillName: "java/kotlin",
       fontAwesomeClassname: "fab fa-java"
     },
     {
@@ -72,20 +72,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "vuejs",
-      fontAwesomeClassname: "fab fa-vuejs"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "python",
@@ -138,7 +126,7 @@ const techStack = {
   experience: [
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
@@ -146,7 +134,7 @@ const techStack = {
     },
     {
       Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "40%" //Insert relative proficiency in percentage
+      progressPercentage: "20%" //Insert relative proficiency in percentage
     },
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -163,7 +151,7 @@ const workExperiences = {
       companylogo: require("./assets/images/KidariStudio.png"),
       date: "May 2022 – Present",
       desc: "글로벌개발부 BE 개발팀",
-      descBullets: ["글로벌 웹툰 플랫폼 백엔드 개발"]
+      descBullets: ["글로벌 웹툰 플랫폼 백엔드 운영 및 개발"]
     },
     {
       role: "Software Engineer",
